@@ -3,19 +3,19 @@ import { CheckIcon } from '@heroicons/react/outline'
 
 const features = [
   {
-    name: 'Invite team members',
-    description: 'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Sports & Exercise Rehabilitation',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.',
   },
-  { name: 'List view', description: 'You can manage phone, email and chat conversations all from a single mailbox.' },
+  { name: 'Musculoskeletal Injuries ', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
   {
-    name: 'Keyboard shortcuts',
-    description: 'You can manage phone, email and chat conversations all from a single mailbox.',
+    name: 'Chronic Pain',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.',
   },
-  { name: 'Calendars', description: 'You can manage phone, email and chat conversations all from a single mailbox.' },
-  { name: 'Notifications', description: 'Find what you need with advanced filters, bulk actions, and quick views.' },
-  { name: 'Boards', description: 'Find what you need with advanced filters, bulk actions, and quick views.' },
-  { name: 'Reporting', description: 'Find what you need with advanced filters, bulk actions, and quick views.' },
-  { name: 'Mobile app', description: 'Find what you need with advanced filters, bulk actions, and quick views.' },
+  { name: 'Neurological Rehabilitation', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Paediatric ', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Pre and Post Natal Services', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Disability Services', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Hydrotherapy', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
 ]
 
 const Services = () => {
@@ -26,7 +26,7 @@ const Services = () => {
           <h2 className="text-base font-semibold text-purple uppercase tracking-wide">Our Services</h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900">Mobile & clinic-based</p>
           <p className="mt-4 text-lg text-gray-500">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+            Whether you prefer your local clinic or the comfort of your own home, we'll be there for you.
           </p>
         </div>
         <div className="mt-12 lg:mt-0 lg:col-span-2">

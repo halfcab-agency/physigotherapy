@@ -1,4 +1,5 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const LogoCloud = () => {
   return (
@@ -9,31 +10,19 @@ const LogoCloud = () => {
       </p>
       <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+          <StaticImage className="h-12" src="../images/medicare.png" alt="Medicare>" />
         </div>
         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+          <StaticImage className="h-12" src="../images/ndis.png" alt="NDIS" />
         </div>
         <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-          <img
-            className="h-12"
-            src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-            alt="StaticKit"
-          />
+          <StaticImage className="h-12" src="../images/medibank.png" alt="Medibank" />
         </div>
         <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-          <img
-            className="h-12"
-            src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-            alt="Transistor"
-          />
+          <StaticImage className="h-12" src="../images/nib.png" alt="NIB" />
         </div>
         <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-          <img
-            className="h-12"
-            src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-            alt="Workcation"
-          />
+          <StaticImage className="h-12" src="../images/hbf.png" alt="HBF" />
         </div>
       </div>
     </div>
