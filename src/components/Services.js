@@ -3,41 +3,38 @@ import { CheckIcon } from '@heroicons/react/outline'
 
 const features = [
   {
-    name: 'Sports & Exercise Rehabilitation',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.',
+    name: 'Disability services & neurological rehabilitation',
+    description: 'Supporting adults and children to achieve their goals via <u>assessment</u>, <u>individual or group-based intervention</u> and prescription of <u>assistive technology</u> to maximise their participation at home and in the community. Assistive technology includes, but is not limited to, standing frames, walkers, ambulatory aids, adaptive exercise equipment and modified bikes/trikes.',
   },
-  { name: 'Musculoskeletal Injuries ', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Aquatic Physiotherapy (aka Hydrotherapy)', description: 'Individualised activities and physiotherapy intervention applied in a heated pool to maximise outcomes and add an element of fun and variation.' },
   {
-    name: 'Chronic Pain',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.',
+    name: 'Gait analysis and retraining',
+    description: 'Assessment and analysis of walking patterns and/or independent mobility followed by targeted, specific intervention aimed at maximising stability, safety and independence in regards to mobilising within one’s home and community.',
   },
-  { name: 'Neurological Rehabilitation', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
-  { name: 'Paediatric ', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
-  { name: 'Pre and Post Natal Services', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
-  { name: 'Disability Services', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
-  { name: 'Hydrotherapy', description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A id repudiandae iste.' },
+  { name: 'Spasticity management', description: 'Such as serial casting, assistance with selecting appropriate orthotics and/or bracing to address reduced range of motion, hypertonia and movement disorders.' },
 ]
 
 const Services = () => {
   return (
-    <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-        <div>
+    <div id="services" className="bg-white">
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:pt-24 lg:pb-0 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div className='self-start'>
           <h2 className="text-base font-semibold text-purple uppercase tracking-wide">Our Services</h2>
-          <p className="mt-2 text-3xl font-extrabold text-gray-900">Mobile & clinic-based</p>
+          <p className="mt-2 text-3xl font-extrabold text-gray-900">Mobile physiotherapy within the Perth Metro Area</p>
           <p className="mt-4 text-lg text-gray-500">
-            Whether you prefer your local clinic or the comfort of your own home, we'll be there for you.
+            We provide support at home, work, school or elsewhere. 
           </p>
+          <p className="mt-4 text-lg text-gray-500">Please do not hesitate to <a href="#contact" className="underline">get in touch</a> with us if you would like to know more about our services.</p>
         </div>
         <div className="mt-12 lg:mt-0 lg:col-span-2">
-          <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+          <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
                   <CheckIcon className="absolute h-6 w-6 text-light-green" aria-hidden="true" />
                   <p className="ml-9 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 ml-9 text-base text-gray-500">{feature.description}</dd>
+                <dd className="mt-2 ml-9 text-base text-gray-500" dangerouslySetInnerHTML={{ __html: feature.description }}></dd>
               </div>
             ))}
           </dl>

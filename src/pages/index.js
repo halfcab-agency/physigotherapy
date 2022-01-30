@@ -1,17 +1,19 @@
 import React from "react"
 import Layout from "../components/layout"
-import LogoCloud from "../components/LogoCloud"
+import Pricing from "../components/Pricing"
 import Services from "../components/Services"
 import Team from "../components/Team"
 import Contact from "../components/Contact"
+import BottomBar from "../components/BottomBar"
 
 const Index = () => {
   return (
     <Layout>
-      <LogoCloud />
+      <Pricing />
       <Services />
       <Team />
       <Contact />
+      <BottomBar />
     </Layout>
   )
 }

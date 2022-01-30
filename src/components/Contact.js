@@ -3,7 +3,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 
 const Contact = () => {
   return (
-    <div className="relative bg-white">
+    <div id="contact" className="relative bg-white">
       <div className="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
       </div>
@@ -15,38 +15,32 @@ const Contact = () => {
               If you are looking to make an appointment or don't see a service that you require, please fill in the adjacent form and we will endeavour to help as best as we can.
             </p>
             <dl className="mt-8 text-base text-gray-500">
-              <div>
-                <dt className="sr-only">Postal address</dt>
-                <dd>
-                  <p>742 Evergreen Terrace</p>
-                  <p>Perth, WA 6000</p>
-                </dd>
-              </div>
               <div className="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">0412 345 678</span>
+                  <span className="ml-3">0466 556 973</span>
                 </dd>
               </div>
-              <div className="mt-3">
+              {/* <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
                   <span className="ml-3">support@example.com</span>
                 </dd>
-              </div>
+              </div> */}
             </dl>
           </div>
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form action="#" method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="full-name" className="sr-only">
-                  Full name
+                  Full name*
                 </label>
                 <input
+                  required
                   type="text"
                   name="full-name"
                   id="full-name"
@@ -57,9 +51,10 @@ const Contact = () => {
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">
-                  Email
+                  Email*
                 </label>
                 <input
+                  required
                   id="email"
                   name="email"
                   type="email"
@@ -82,17 +77,35 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="sr-only">
-                  Message
+                <label htmlFor="service-location" className="sr-only">
+                  Requested Service Location
                 </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-light-green focus:border-light-green border border-gray-300 rounded-md"
-                  placeholder="Message"
-                  defaultValue={''}
+                <input
+                  type="text"
+                  name="service-location"
+                  id="service-location"
+                  autoComplete="tel"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-light-green focus:border-light-green border-gray-300 rounded-md"
+                  placeholder="Requested service location"
                 />
+              </div>
+              <div className="lg:col-span-2">
+                <label htmlFor="funding" className="sr-only">
+                  Funding*
+                </label>
+                <select
+                  required
+                  id="funding"
+                  name="funding"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-light-green focus:border-light-green border border-gray-300 rounded-md"
+                >
+                  <option value="" disabled>Select an option</option>
+                  <option value="NDIS plan-managed">NDIS plan-managed</option>
+                  <option value="NDIS self-managed">NDIS self-managed</option>
+                  <option value="Private health insurance">Private health insurance</option>
+                  <option value="Private fee paying">Private fee paying</option>
+                  <option value="Other">Other </option>
+                </select>
               </div>
               <div>
                 <button
