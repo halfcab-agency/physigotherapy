@@ -23,7 +23,7 @@ const Team = () => {
   return (
     <div className="bg-gray-50">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-        <div class="mb-6">
+        <div className="mb-6">
           <h2 className="text-base font-semibold text-purple uppercase tracking-wide">Who we are</h2>
           <p className="mt-2 text-3xl font-extrabold text-gray-900">Meet our team</p>
         </div>

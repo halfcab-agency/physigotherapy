@@ -4,12 +4,12 @@ import { CheckIcon } from '@heroicons/react/outline'
 const features = [
   {
     name: 'Disability services & neurological rehabilitation',
-    description: 'Supporting adults and children to achieve their goals via <u>assessment</u>, <u>individual or group-based intervention</u> and prescription of <u>assistive technology</u> to maximise their participation at home and in the community. Assistive technology includes, but is not limited to, standing frames, walkers, ambulatory aids, adaptive exercise equipment and modified bikes/trikes.',
+    description: 'Supporting adults and children to achieve their goals via assessment, individual or group-based intervention and prescription of assistive technology to maximise their participation at home and in the community. Assistive technology includes, but is not limited to, standing frames, walkers, ambulatory aids, adaptive exercise equipment and modified bikes/trikes.',
   },
   { name: 'Aquatic Physiotherapy (aka Hydrotherapy)', description: 'Individualised activities and physiotherapy intervention applied in a heated pool to maximise outcomes and add an element of fun and variation.' },
   {
     name: 'Gait analysis and retraining',
-    description: 'Assessment and analysis of walking patterns and/or independent mobility followed by targeted, specific intervention aimed at maximising stability, safety and independence in regards to mobilising within one’s home and community.',
+    description: 'Assessment and analysis of one\'s followed by targeted, specific intervention aimed at maximising stability, safety and independence in regards to mobilising at home and within the community.',
   },
   { name: 'Spasticity management', description: 'Such as serial casting, assistance with selecting appropriate orthotics and/or bracing to address reduced range of motion, hypertonia and movement disorders.' },
 ]
@@ -34,7 +34,7 @@ const Services = () => {
                   <CheckIcon className="absolute h-6 w-6 text-light-green" aria-hidden="true" />
                   <p className="ml-9 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 ml-9 text-base text-gray-500" dangerouslySetInnerHTML={{ __html: feature.description }}></dd>
+                <dd className="mt-2 ml-9 text-base text-gray-500">{feature.description}</dd>
               </div>
             ))}
           </dl>

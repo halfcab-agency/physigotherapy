@@ -22,19 +22,20 @@ const Contact = () => {
                   <span className="ml-3">0466 556 973</span>
                 </dd>
               </div>
-              {/* <div className="mt-3">
+              <div className="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                  <span className="ml-3">support@example.com</span>
+                  <a className="ml-3 hover:underline" href="mailto:admin@physigotherapy.com.au">admin@physigotherapy.com.au</a>
                 </dd>
-              </div> */}
+              </div>
             </dl>
           </div>
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form data-netlify="true" method="POST" name="contact" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label htmlFor="full-name" className="sr-only">
                   Full name*
@@ -97,7 +98,7 @@ const Contact = () => {
                   required
                   id="funding"
                   name="funding"
-                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-light-green focus:border-light-green border border-gray-300 rounded-md"
+                  className="block w-full shadow-sm py-3 px-4 invalid:text-gray-500 placeholder-gray-500 focus:ring-light-green focus:border-light-green border border-gray-300 rounded-md"
                 >
                   <option value="" disabled>Select an option</option>
                   <option value="NDIS plan-managed">NDIS plan-managed</option>
@@ -106,6 +107,18 @@ const Contact = () => {
                   <option value="Private fee paying">Private fee paying</option>
                   <option value="Other">Other </option>
                 </select>
+              </div>
+              <div className="lg:col-span-2">
+                <label htmlFor="message" className="sr-only">
+                  Message
+                </label>
+                <textarea
+                  rows={5}
+                  id="message"
+                  name="message"
+                  className="block w-full shadow-sm py-3 px-4 invalid:text-gray-500 placeholder-gray-500 focus:ring-light-green focus:border-light-green border border-gray-300 rounded-md"
+                  placeholder="If there's anything we should know, please enter it here."
+                />
               </div>
               <div>
                 <button
