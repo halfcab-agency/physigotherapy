@@ -40,8 +40,8 @@ const Team = () => {
               {people.map((person) => (
                 <li key={person.name}>
                   <div className="space-y-4">
-                    <div className="aspect-w-3 aspect-h-2">
-                      {person.name === 'Heather Murray' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg" src={'../images/heather.jpg'} alt="Heather Murray, senior physiotherapist and owner" /> : <StaticImage objectPosition='top' className="shadow-lg rounded-lg" src={'../images/monique.jpg'} alt="Monique Davies, senior physiotherapist" />}
+                    <div>
+                      {person.name === 'Heather Murray' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg w-full h-96" src={'../images/heather.jpg'} alt="Heather Murray, senior physiotherapist and owner" /> : <StaticImage objectPosition='top' className="shadow-lg rounded-lg w-full h-96" src={'../images/monique.jpg'} alt="Monique Davies, senior physiotherapist" />}
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h3>{person.name}</h3>
