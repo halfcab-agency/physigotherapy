@@ -32,7 +32,7 @@ const Pricing = () => {
                 </p>
                 <div className="mt-8">
                   <div className="flex items-center">
-                    <h3 className="flex-shrink-0 pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-purple">
+                    <h3 className="pr-4 bg-white text-sm tracking-wider font-semibold uppercase text-purple">
                       Our services can be accessed through:
                     </h3>
                     <div className="flex-1 border-t-2 border-gray-200" />
