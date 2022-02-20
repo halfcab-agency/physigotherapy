@@ -9,7 +9,7 @@ const features = [
   { name: 'Aquatic Physiotherapy (aka Hydrotherapy)', description: 'Individualised activities and physiotherapy intervention applied in a heated pool to maximise outcomes and add an element of fun and variation.' },
   {
     name: 'Gait analysis and retraining',
-    description: 'Assessment and analysis of one\'s followed by targeted, specific intervention aimed at maximising stability, safety and independence in regards to mobilising at home and within the community.',
+    description: 'Assessment and analysis of one\'s gait followed by targeted, specific intervention aimed at maximising stability, safety and independence in regards to mobilising at home and within the community.',
   },
   { name: 'Spasticity management', description: 'Such as serial casting, assistance with selecting appropriate orthotics and/or bracing to address reduced range of motion, hypertonia and movement disorders.' },
 ]
