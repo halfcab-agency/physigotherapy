@@ -11,12 +11,12 @@ const people = [
     link: '/about-heather'
   },
   {
-    name: 'Monique Davies',
-    role: 'Senior Physiotherapist',
-    imageUrl: '../images/monique.jpg',
+    name: 'Jan Walters',
+    role: 'Physiotherapist',
+    imageUrl: '../images/jan-walters.jpg',
     bio:
-      '<p>Monique is a highly skilled Senior Physiotherapist who has post-graduate qualifications in Neurological Rehabilitation.</p><p>Monique’s professional interests include neurological rehabilitation, management and treatment of vestibular issues and dizziness and supporting adults and adolescents with physical disabilities to maximise their independence and inclusion in their local community.</p><p>Monique provides mobile services south of the river, centred around Fremantle.</p>',
-    link: '/about-monique'
+      '<p>Jan has joined our team after many years of experience working at Child Development Services (CDS) where she provided community-based physiotherapy, as part of a multidisciplinary team, to children with delayed gross motor skills and/or developmental concerns.</p><p>Jan brings a wealth of knowledge and experience in early intervention to our team.</p>',
+    link: '/about-jan'
   },
   {
     name: 'Rebecca Joyce',
@@ -47,9 +47,9 @@ const Team = () => {
                 <li key={person.name}>
                   <div className="space-y-4">
                     <div>
-                      {person.name === 'Heather Murray' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg w-full h-96" src={'../images/heather.jpg'} alt="Heather Murray, senior physiotherapist and owner" /> 
-                      : person.name === 'Monique Davies' ? <StaticImage objectPosition='top' className="shadow-lg rounded-lg w-full h-96" src={'../images/monique.jpg'} alt="Monique Davies, senior physiotherapist" /> 
-                      : <StaticImage objectPosition='top' className="shadow-lg rounded-lg w-full h-96" src={'../images/rebecca.jpg'} alt="Rebecca Joyce, therapy assistant" /> 
+                      {person.name === 'Heather Murray' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg w-full h-96" src={'../images/heather.jpg'} alt="Heather Murray, senior physiotherapist and owner" />
+                      : person.name === 'Jan Walters' ? <div className="shadow-lg rounded-lg bg-gray-200 w-full h-96 flex items-center justify-center text-gray-400 text-4xl">Jan Walters</div>
+                      : <StaticImage objectPosition='top' className="shadow-lg rounded-lg w-full h-96" src={'../images/rebecca.jpg'} alt="Rebecca Joyce, therapy assistant" />
                       }
                     </div>
                     <div className="text-lg leading-6 font-medium space-y-1">
