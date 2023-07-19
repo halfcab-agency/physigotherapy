@@ -48,7 +48,7 @@ const Team = () => {
                   <div className="space-y-4">
                     <div>
                       {person.name === 'Heather Murray' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg w-full h-96" src={'../images/heather.jpg'} alt="Heather Murray, senior physiotherapist and owner" />
-                      : person.name === 'Jan Walters' ? <div className="shadow-lg rounded-lg bg-gray-200 w-full h-96 flex items-center justify-center text-gray-400 text-4xl">Jan Walters</div>
+                      : person.name === 'Jan Walters' ? <StaticImage objectPosition="top" className="shadow-lg rounded-lg w-full h-96" src={'../images/jan-walters.jpg'} alt="Jan Walters, Physiotherapist" />
                       : <StaticImage objectPosition='top' className="shadow-lg rounded-lg w-full h-96" src={'../images/rebecca.jpg'} alt="Rebecca Joyce, therapy assistant" />
                       }
                     </div>
