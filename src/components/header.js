@@ -5,7 +5,6 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
   { name: 'Home', href: '#top' },
-  { name: 'Pricing', href: '#pricing' },
   { name: 'Services', href: '#services' },
   { name: 'Contact', href: '#contact' },
 ]
